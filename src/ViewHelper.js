@@ -40,7 +40,7 @@ const euler = new Euler();
 const q1 = new Quaternion();
 const q2 = new Quaternion();
 const point = new Vector3();
-const dim = 128;
+const dim = 100;
 const turnRate = 2 * Math.PI; // turn rate in angles per second
 const raycaster = new Raycaster();
 const mouse = new Vector2();
@@ -50,7 +50,7 @@ const dummy = new Object3D();
 let radius = 0;
 
 class ViewHelper extends Object3D {
-	constructor(camera, renderer, placement = "bottom-right", size = 128) {
+	constructor(camera, renderer, placement = "bottom-right", size = 100) {
 		super();
 
 		this.renderer = renderer;
